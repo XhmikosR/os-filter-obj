@@ -1,24 +1,25 @@
+import process from 'node:process';
 import test from 'ava';
-import m from '.';
+import m from './index.js';
 
-test(t => {
-	const arr = [{
-		foo: 'all'
+test('works', t => {
+	const array = [{
+		foo: 'all',
 	}, {
 		foo: 'linux',
-		os: 'linux'
+		os: 'linux',
 	}, {
 		foo: 'darwin',
-		os: 'darwin'
+		os: 'darwin',
 	}, {
 		foo: 'win32',
-		os: 'win32'
+		os: 'win32',
 	}, {
 		foo: 'arm',
-		os: 'arm'
+		os: 'arm',
 	}];
 
-	t.is(m(arr, {keep: true}).length, 2);
-	t.is(m(arr, {keep: true})[0].os, undefined);
-	t.is(m(arr, {keep: true})[1].os, process.platform);
+	t.is(m(array).length, 2);
+	t.is(m(array)[0].os, undefined);
+	t.is(m(array)[1].os, process.platform);
 });

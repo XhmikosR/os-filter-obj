@@ -1,7 +1,14 @@
-'use strict';
-module.exports = input => {
-	const arch = require('arch')();
-	const check = (bool, key, val) => (!bool || !key || key === val);
+import process from 'node:process';
+import arch from 'arch';
 
-	return input.filter(x => [process.platform, arch].every((y, i) => check(i === 0, x.os, y) && check(i === 1, x.arch, y)));
+const check = (bool, key, value) => !bool || !key || key === value;
+
+const osFilterObj = input => {
+	return input.filter(x => {
+		return [process.platform, arch()].every(
+			(y, i) => check(i === 0, x.os, y) && check(i === 1, x.arch, y),
+		);
+	});
 };
+
+export default osFilterObj;

@@ -1,19 +1,19 @@
-# os-filter-obj [![Build Status](https://travis-ci.org/kevva/os-filter-obj.svg?branch=master)](https://travis-ci.org/kevva/os-filter-obj)
+# os-filter-obj [![CI](https://github.com/kevva/os-filter-obj/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/kevva/os-filter-obj/actions/workflows/ci.yml)
 
 > Filter an array of objects to a specific OS
 
 
 ## Install
 
-```
-$ npm install os-filter-obj
+```sh
+npm install os-filter-obj
 ```
 
 
 ## Usage
 
 ```js
-const osFilterObj = require('os-filter-obj');
+import osFilterObj from 'os-filter-obj';
 
 const objects = [{
 	os: 'linux',

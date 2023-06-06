@@ -1,35 +1,50 @@
 {
-  "name": "os-filter-obj",
-  "version": "2.0.0",
-  "description": "Filter an array of objects to a specific OS",
-  "license": "MIT",
-  "repository": "kevva/os-filter-obj",
-  "author": {
-    "name": "Kevin Mårtensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "https://github.com/kevva"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "arch",
-    "filter",
-    "obj",
-    "object",
-    "os"
-  ],
-  "dependencies": {
-    "arch": "^2.1.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "os-filter-obj",
+	"version": "2.0.0",
+	"description": "Filter an array of objects to a specific OS",
+	"license": "MIT",
+	"repository": "kevva/os-filter-obj",
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "https://github.com/kevva"
+	},
+	"engines": {
+		"node": "^14.14.0 || >=16.0.0"
+	},
+	"scripts": {
+		"ava": "ava",
+		"lint": "xo",
+		"xo": "xo",
+		"fix": "xo --fix",
+		"test": "npm run ava"
+	},
+	"main": "index.js",
+	"type": "module",
+	"exports": {
+		".": "./index.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"arch",
+		"filter",
+		"obj",
+		"object",
+		"os"
+	],
+	"dependencies": {
+		"arch": "^2.2.0"
+	},
+	"devDependencies": {
+		"ava": "^4.3.3",
+		"xo": "^0.54.2"
+	},
+	"xo": {
+		"rules": {
+			"arrow-body-style": "off",
+			"unicorn/prevent-abbreviations": "off"
+		}
+	}
 }
