@@ -1,4 +1,4 @@
-# os-filter-obj [![CI](https://github.com/kevva/os-filter-obj/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/kevva/os-filter-obj/actions/workflows/ci.yml)
+# os-filter-obj [![CI](https://github.com/XhmikosR/os-filter-obj/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/XhmikosR/os-filter-obj/actions/workflows/ci.yml)
 
 > Filter an array of objects to a specific OS
 
@@ -6,7 +6,7 @@
 ## Install
 
 ```sh
-npm install os-filter-obj
+npm install @xhmikosr/os-filter-obj
 ```
 
 

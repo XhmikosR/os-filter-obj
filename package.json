@@ -1,9 +1,12 @@
 {
-	"name": "os-filter-obj",
+	"name": "@xhmikosr/os-filter-obj",
 	"version": "2.0.0",
 	"description": "Filter an array of objects to a specific OS",
 	"license": "MIT",
-	"repository": "kevva/os-filter-obj",
+	"repository": "XhmikosR/os-filter-obj",
+  "publishConfig": {
+    "access": "public"
+  },
 	"author": {
 		"name": "Kevin Mårtensson",
 		"email": "kevinmartensson@gmail.com",
