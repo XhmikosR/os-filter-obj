@@ -38,7 +38,7 @@
 		"os"
 	],
 	"dependencies": {
-		"arch": "^2.2.0"
+		"arch": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "^4.3.3",
