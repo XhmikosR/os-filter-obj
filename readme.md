@@ -1,4 +1,4 @@
-# os-filter-obj [![CI](https://github.com/XhmikosR/os-filter-obj/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/XhmikosR/os-filter-obj/actions/workflows/ci.yml)
+# os-filter-obj [![npm version](https://img.shields.io/npm/v/@xhmikosr/os-filter-obj?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@xhmikosr/os-filter-obj) [![CI Status](https://img.shields.io/github/actions/workflow/status/XhmikosR/os-filter-obj/ci.yml?branch=master&label=CI&logo=github)](https://github.com/XhmikosR/os-filter-obj/actions/workflows/ci.yml?query=branch%3Amaster)
 
 > Filter an array of objects to a specific OS
 
