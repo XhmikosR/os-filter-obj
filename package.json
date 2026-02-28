@@ -1,6 +1,6 @@
 {
 	"name": "@xhmikosr/os-filter-obj",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Filter an array of objects to a specific OS",
 	"license": "MIT",
 	"repository": "XhmikosR/os-filter-obj",
