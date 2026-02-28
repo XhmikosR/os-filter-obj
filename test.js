@@ -1,9 +1,9 @@
 import process from 'node:process';
 import test from 'ava';
-import m from './index.js';
+import osFilterObj from './index.js';
 
 test('works', t => {
-	const array = [{
+	const fixtures = [{
 		foo: 'all',
 	}, {
 		foo: 'linux',
@@ -19,7 +19,7 @@ test('works', t => {
 		os: 'arm',
 	}];
 
-	t.is(m(array).length, 2);
-	t.is(m(array)[0].os, undefined);
-	t.is(m(array)[1].os, process.platform);
+	t.is(osFilterObj(fixtures).length, 2);
+	t.is(osFilterObj(fixtures)[0].os, undefined);
+	t.is(osFilterObj(fixtures)[1].os, process.platform);
 });

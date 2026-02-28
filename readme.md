@@ -2,13 +2,11 @@
 
 > Filter an array of objects to a specific OS
 
-
 ## Install
 
 ```sh
 npm install @xhmikosr/os-filter-obj
 ```
-
 
 ## Usage
 
@@ -43,7 +41,6 @@ osFilterObj(objects);
 */
 ```
 
-
 ## API
 
 ### osFilterObj(objects)
@@ -52,10 +49,8 @@ Returns an `Array` with the filtered objects.
 
 #### objects
 
-Type: `Array`
-
-The `Array` to filter.
-
+* Type: `Array`
+* The `Array` to filter.
 
 ## License
 
