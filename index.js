@@ -1,5 +1,5 @@
 import process from 'node:process';
-import arch from 'arch';
+import {systemArchitectureSync as arch} from 'system-architecture';
 
 const matchesFilter = (shouldCheck, expected, actual) => {
 	return !shouldCheck || !expected || expected === actual;
