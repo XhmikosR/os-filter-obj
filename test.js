@@ -24,7 +24,8 @@ test('works', t => {
 	t.is(osFilterObj(fixtures)[1].os, process.platform);
 });
 
-test('should filter expected architecture', t => {
+// This test can be checked only if RUNNER_ARCH is set
+(process.env.CI ? test : test.skip)('should filter expected architecture', t => {
 	const fixtures = [{
 		foo: 'all',
 	}, {
@@ -37,6 +38,5 @@ test('should filter expected architecture', t => {
 
 	t.is(osFilterObj(fixtures).length, 2);
 	t.is(osFilterObj(fixtures)[0].os, undefined);
-	// This test can be checked only if RUNNER_ARCH is set
 	t.is(osFilterObj(fixtures)[1].arch, process.env.RUNNER_ARCH?.toLocaleLowerCase());
 });
